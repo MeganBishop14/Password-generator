@@ -27,6 +27,7 @@ def get_password(length, number, capitalization, special):
     if special:
         position=random.randrange(0,len(passlist))
         passlist[position]= punctuation[random.randrange(0,len(punctuation))]
-        password = " ".join(passlist)
+       
         #(similar to the number) you will replace a random index with a special
+    password = " ".join(passlist)
     return password
